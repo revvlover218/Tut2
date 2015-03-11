@@ -2,27 +2,33 @@
 #define FRACTION_H
 
 class Fraction {
+
+private:
+	
+	int Numeratorf1;
+	int Numeratorf2;
+	int Denominatorf1;
+	int Denominatorf2;
 	int numerator;
 	int denominator;
 
-	int gcd(int a, int b);
-	Fraction pretty(Fraction &Temp);
-
 public:
-	Fraction();
-	~Fraction();
+	Fraction();		//Default Constructor
+	Fraction(int, int, int, int);		//Overloaded Constructor
+	~Fraction();		//Destructor
 
-	void setNumerator(int num);
-	void setDenominator(int den);
-	int getNumerator(void);
-	int getDenominator(void);
-	void setFraction(int num, int den);
-	void print();
+	int getNf1();		//Accessors
+	int getNf2();
+	int getDf1();
+	int getDf2();
 
-	Fraction operator+(Fraction &b);
-	Fraction operator-(Fraction &b);
-	Fraction operator*(Fraction &b);
-	Fraction operator/(Fraction &b);
+	void setNf1(const int numerf1);		//Mutators
+	void setNf2(const int numerf2);
+	bool setDf1(const int denomf1);
+	bool setDf2(const int denomf2);
+
+	Fraction operator+(const Fraction &);
+	
 };
 
 #endif

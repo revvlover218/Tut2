@@ -136,6 +136,7 @@ Fraction Fraction::operator+(const Fraction& Frac)		//Operator+ Overloading
 	f.Denominatorf1 = Denominatorf1 + Frac.Denominatorf1;
 	f.Denominatorf2 = Denominatorf2 + Frac.Denominatorf2;
 
+	return f;
 }
 
 /*Fraction Fraction::subtraction()
