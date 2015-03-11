@@ -40,10 +40,7 @@ public:
 	Fraction subtraction();
 	Fraction operator-(const Fraction&);
 
-
-
-
-	
+	void print();	
 };
 
 #endif

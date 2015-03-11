@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <math.h>
 #include "Fraction.h"
 
 
@@ -188,4 +189,33 @@ Fraction Fraction::operator-(const Fraction& Frac)
 	f.Denominatorf2 = Denominatorf2 - Frac.Denominatorf2;
 
 	return f;
+}
+
+void Fraction::print()
+{
+
+	int wholenum = numerator / denominator;
+	int remainder = numerator % denominator;
+
+	if (wholenum != 0)
+	{
+		if (remainder == 0)
+		{
+
+		std::cout << "Whole Number: " << wholenum;
+		}
+	
+		else
+		{
+
+			std::cout << "Fraction: " << wholenum << "	" << remainder << " / " << denominator;
+		}
+
+	}
+
+	else
+	{
+
+		std::cout << "Fraction: " << remainder << " / " << denominator;
+	}
 }
