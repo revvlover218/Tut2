@@ -202,13 +202,13 @@ void Fraction::print()
 		if (remainder == 0)
 		{
 
-		std::cout << "Whole Number: " << wholenum;
+		std::cout << wholenum;
 		}
 	
 		else
 		{
 
-			std::cout << "Fraction: " << wholenum << "	" << remainder << " / " << denominator;
+			std::cout << wholenum << "	" << remainder << " / " << denominator;
 		}
 
 	}
@@ -216,6 +216,6 @@ void Fraction::print()
 	else
 	{
 
-		std::cout << "Fraction: " << remainder << " / " << denominator;
+		std::cout << remainder << " / " << denominator;
 	}
 }
