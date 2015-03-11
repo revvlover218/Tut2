@@ -27,7 +27,22 @@ public:
 	bool setDf1(const int denomf1);
 	bool setDf2(const int denomf2);
 
-	Fraction operator+(const Fraction &);
+
+	Fraction multiplication();		//Operation
+	Fraction operator*(const Fraction&); //Overloaded operation
+
+	Fraction division();
+	Fraction operator/(const Fraction&);
+	
+	Fraction addition();
+	Fraction operator+(const Fraction&);
+
+	Fraction subtraction();
+	Fraction operator-(const Fraction&);
+
+
+
+
 	
 };
 
