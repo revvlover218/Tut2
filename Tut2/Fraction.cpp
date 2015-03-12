@@ -55,14 +55,12 @@ void Fraction::setNf1(const int numerf1)
 {
 
 	Numeratorf1 = numerf1;
-	return;
 }
 
 void Fraction::setNf2(const int numerf2)
 {
 
 	Numeratorf2 = numerf2;
-	return;
 }
 
 bool Fraction::setDf1(const int denomf1)

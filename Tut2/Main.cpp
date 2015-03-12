@@ -41,6 +41,11 @@ int main()
 
 	//Display functions
 
+	cout << frac.getNf1();
+	cout << frac.getDf1();
+	cout << frac.getNf2();
+	cout << frac.getDf2();
+
 	cout << "\n\n" << "Multiplication: ";
 	product = frac.multiplication();
 	product.print();
@@ -56,7 +61,7 @@ int main()
 	cout << "\n" << "Subtraction: ";
 	diff = frac.subtraction();
 	diff.print();
-
+	
 	system("pause");
 	return 0;
 }
