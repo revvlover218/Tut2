@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <math.h>
 #include "Fraction.h"
 
 
@@ -54,14 +55,12 @@ void Fraction::setNf1(const int numerf1)
 {
 
 	Numeratorf1 = numerf1;
-	return;
 }
 
 void Fraction::setNf2(const int numerf2)
 {
 
 	Numeratorf2 = numerf2;
-	return;
 }
 
 bool Fraction::setDf1(const int denomf1)
@@ -94,37 +93,64 @@ bool Fraction::setDf2(const int denomf2)
 	return set;
 }
 
-/*Fraction Fraction::multiplication()
+Fraction Fraction::multiplication()
 {
 
-Fraction pd;
+	Fraction product;
 
-pd.numerator = Numeratorf1*Numeratorf2;
-pd.denominator = Denominatorf1*Denominatorf2;
+	product.numerator = Numeratorf1 * Numeratorf2;
+	product.denominator = Denominatorf1 * Denominatorf2;
 
-return pd;}
+	return product;
+}
+
+Fraction Fraction::operator*(const Fraction& Frac)
+{
+
+	Fraction f;
+
+	f.Numeratorf1 = Numeratorf1 * Frac.Numeratorf1;
+	f.Numeratorf2 = Numeratorf2 * Frac.Numeratorf2;
+	f.Denominatorf1 = Denominatorf1 * Frac.Denominatorf1;
+	f.Denominatorf2 = Denominatorf2 * Frac.Denominatorf2;
+
+	return f;
+}
 
 Fraction Fraction::division()
 {
 
-Fraction q;
+	Fraction qoutient;
 
-q.numerator = Numeratorf1*Denominatorf2;
-q.denominator = Denominatorf1*Numeratorf2;
+	qoutient.numerator = Numeratorf1 * Denominatorf2;
+	qoutient.denominator = Denominatorf1 * Numeratorf2;
 
-return q;
+	return qoutient;
+}
+
+Fraction Fraction::operator/(const Fraction& Frac)
+{
+
+	Fraction f;
+
+	f.Numeratorf1 = Numeratorf1 / Frac.Numeratorf1;
+	f.Numeratorf2 = Numeratorf2 / Frac.Numeratorf2;
+	f.Denominatorf1 = Denominatorf1 / Frac.Denominatorf1;
+	f.Denominatorf2 = Denominatorf2 / Frac.Denominatorf2;
+
+	return f;
 }
 
 Fraction Fraction::addition()
 {
 
-Fraction s;
+	Fraction sum;
 
-s.numerator = (Numeratorf1*Denominatorf2) + (Numeratorf2*Denominatorf1);
-s.denominator = Denominatorf1*Denominatorf2;
+	sum.numerator = (Denominatorf2 * Numeratorf1) + (Denominatorf1 * Numeratorf2);
+	sum.denominator = Denominatorf1 * Denominatorf2;
 
-return s;
-}*/
+	return sum;
+}
 
 Fraction Fraction::operator+(const Fraction& Frac)		//Operator+ Overloading
 {
@@ -136,15 +162,58 @@ Fraction Fraction::operator+(const Fraction& Frac)		//Operator+ Overloading
 	f.Denominatorf1 = Denominatorf1 + Frac.Denominatorf1;
 	f.Denominatorf2 = Denominatorf2 + Frac.Denominatorf2;
 
+	return f;
 }
 
-/*Fraction Fraction::subtraction()
+Fraction Fraction::subtraction()
 {
 
-Fraction d;
+	Fraction difference;
 
-d.numerator = (Numeratorf1*Denominatorf2) - (Numeratorf2*Denominatorf1);
-d.denominator = Denominatorf1*Denominatorf2;
+	difference.numerator = (Denominatorf2 * Numeratorf1) - (Denominatorf1 * Numeratorf2);
+	difference.denominator = Denominatorf1 * Denominatorf2;
 
-return d;
-}*/
+	return difference;
+}
+
+Fraction Fraction::operator-(const Fraction& Frac)
+{
+
+	Fraction f;
+
+	f.Numeratorf1 = Numeratorf1 - Frac.Numeratorf1;
+	f.Numeratorf2 = Numeratorf2 - Frac.Numeratorf2;
+	f.Denominatorf1 = Denominatorf1 - Frac.Denominatorf1;
+	f.Denominatorf2 = Denominatorf2 - Frac.Denominatorf2;
+
+	return f;
+}
+
+void Fraction::print()
+{
+
+	int wholenum = numerator / denominator;
+	int remainder = numerator % denominator;
+
+	if (wholenum != 0)
+	{
+		if (remainder == 0)
+		{
+
+			std::cout << wholenum;
+		}
+
+		else
+		{
+
+			std::cout << wholenum << "	" << remainder << " / " << denominator;
+		}
+
+	}
+
+	else
+	{
+
+		std::cout << remainder << " / " << denominator;
+	}
+}
