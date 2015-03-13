@@ -200,11 +200,11 @@ void Fraction::print()
 		if (remainder == 0)
 		{
 
-		std::cout << wholenum;
-		}
-	
+			std::cout << wholenum;
+}
+
 		else
-		{
+{
 
 			std::cout << wholenum << "	" << remainder << " / " << denominator;
 		}

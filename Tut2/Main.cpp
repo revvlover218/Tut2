@@ -14,9 +14,8 @@ int main()
 
 	Fraction product;
 	Fraction qoutient;
-	Fraction sum; 
+	Fraction sum;
 	Fraction diff;
-	Fraction accmut;		//Accessor and Mutator object
 	Fraction frac;
 
 	//User Input
@@ -34,10 +33,10 @@ int main()
 	cout << "\n\n" << "Denominator: " << "\n";
 	cin >> denomf2;
 
-	accmut.setNf1(numf1);
-	accmut.setDf1(denomf1);
-	accmut.setNf2(numf2);
-	accmut.setDf2(denomf2);
+	frac.setNf1(numf1);
+	frac.setDf1(denomf1);
+	frac.setNf2(numf2);
+	frac.setDf2(denomf2);
 
 	//Display functions
 
@@ -61,7 +60,7 @@ int main()
 	cout << "\n" << "Subtraction: ";
 	diff = frac.subtraction();
 	diff.print();
-	
+
 	system("pause");
 	return 0;
 }

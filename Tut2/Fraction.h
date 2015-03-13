@@ -4,7 +4,7 @@
 class Fraction {
 
 private:
-	
+
 	int Numeratorf1;
 	int Numeratorf2;
 	int Denominatorf1;
@@ -33,14 +33,14 @@ public:
 
 	Fraction division();
 	Fraction operator/(const Fraction&);
-	
+
 	Fraction addition();
 	Fraction operator+(const Fraction&);
 
 	Fraction subtraction();
 	Fraction operator-(const Fraction&);
 
-	void print();	
+	void print();
 };
 
 #endif
