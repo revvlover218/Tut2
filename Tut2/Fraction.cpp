@@ -201,10 +201,10 @@ void Fraction::print()
 		{
 
 			std::cout << wholenum;
-		}
+}
 
 		else
-		{
+{
 
 			std::cout << wholenum << "	" << remainder << " / " << denominator;
 		}
