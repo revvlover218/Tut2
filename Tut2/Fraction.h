@@ -1,6 +1,9 @@
 #ifndef FRACTION_H
 #define FRACTION_H
 
+#include <iostream>
+#include <string>
+
 class Fraction {
 
 private:
@@ -41,6 +44,10 @@ public:
 	Fraction operator-(const Fraction&);
 
 	void print();
+
+	friend ostream& operator<< (ostream &, const Fraction &); //Overloading << and >> 
+	friend istream& operator>> (istream &, const Fraction &);
+
 };
 
 #endif
