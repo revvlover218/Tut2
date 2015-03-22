@@ -2,6 +2,7 @@
 #include <string>
 #include <math.h>
 #include "Fraction.h"
+#include <stdexcept>
 
 
 Fraction::Fraction()

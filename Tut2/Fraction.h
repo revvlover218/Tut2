@@ -45,8 +45,8 @@ public:
 
 	void print();
 
-	friend ostream& operator<< (ostream &, const Fraction &); //Overloading << and >> 
-	friend istream& operator>> (istream &, const Fraction &);
+//	friend ostream& operator<< (ostream &, const Fraction &); //Overloading << and >> 
+	//friend istream& operator>> (istream &, const Fraction &);
 
 };
 
