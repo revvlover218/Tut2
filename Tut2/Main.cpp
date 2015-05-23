@@ -40,27 +40,29 @@ int main()
 
 	//Display functions
 
-	cout << "Numerator 1:" << frac1.getNumerator() << "\n\n";
-	cout << "Denominator 1:" << frac1.getDenominator() << "\n\n";
-	cout << "Numerator 2:" << frac2.getNumerator() << "\n\n";
-	cout << "Denomiator 2:" << frac2.getDenominator() << "\n\n";
+	cout << "Numerator 1 :" << frac1.getNumerator() << "\n\n";
+	cout << "Denominator 1 :" << frac1.getDenominator() << "\n\n";
+	cout << "Numerator 2 :" << frac2.getNumerator() << "\n\n";
+	cout << "Denomiator 2 :" << frac2.getDenominator() << "\n\n";
 
-/*	cout << "\n\n" << "Multiplication: ";
-	product = frac.multiplication();
+	cout << "\n";
+
+	cout << "\n\n" << "Multiplication: ";
+	product = product.multiplication(frac1, frac2);
 	product.print();
 
 	cout << "\n" << "Division: ";
-	qoutient = frac.division();
+	qoutient = qoutient.division(frac1, frac2);
 	qoutient.print();
 
 	cout << "\n" << "Addition: ";
-	sum = frac.addition();
+	sum = sum.addition(frac1, frac2);
 	sum.print();
 
 	cout << "\n" << "Subtraction: ";
-	diff = frac.subtraction();
+	diff = diff.subtraction(frac1, frac2);
 	diff.print();
-	*/
+
 	system("pause");
 	return 0;
 }

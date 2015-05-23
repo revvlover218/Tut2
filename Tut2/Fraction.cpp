@@ -40,6 +40,7 @@ void Fraction::setNumerator(const int numer)
 
 bool Fraction::setDenominator(const int denom)
 {
+
 	bool set = false;
 
 	if (denom != 0)		//Prevents setting the Denominator to Zer0
@@ -54,16 +55,12 @@ bool Fraction::setDenominator(const int denom)
 
 Fraction Fraction::multiplication(Fraction &frac1, Fraction &frac2)
 {
+
 	Fraction product;
 
 	product.numerator = frac1.numerator * frac2.numerator;
 	product.denominator = frac1.denominator * frac2.denominator;
-	/*Fraction product;
-
-	product.numerator = Numeratorf1 * Numeratorf2;
-	product.denominator = Denominatorf1 * Denominatorf2;
-	*/
-
+	
 	return product;
 }
 
@@ -73,10 +70,8 @@ Fraction Fraction::operator*(const Fraction& Frac)
 	Fraction f;
 
 	f.numerator = numerator * Frac.numerator;
-	//f.Numeratorf2 = Numeratorf2 * Frac.Numeratorf2;
 	f.denominator = denominator * Frac.denominator;
-	//f.Denominatorf2 = Denominatorf2 * Frac.Denominatorf2;
-
+	
 	return f;
 }
 
@@ -145,9 +140,7 @@ Fraction Fraction::operator-(const Fraction& Frac)
 	Fraction f;
 
 	f.numerator = numerator - Frac.numerator;
-//	f.Numeratorf2 = Numeratorf2 - Frac.Numeratorf2;
 	f.denominator = denominator - Frac.denominator;
-//	f.Denominatorf2 = Denominatorf2 - Frac.Denominatorf2;
 
 	return f;
 }
@@ -155,36 +148,25 @@ Fraction Fraction::operator-(const Fraction& Frac)
 void Fraction::print()
 {
 
-
-
-
-
-
-
-
-
-	/*int wholenum = numerator / denominator;
+	int wholenum = numerator / denominator;
 	int remainder = numerator % denominator;
 
 	if (wholenum != 0)
 	{
 		if (remainder == 0)
 		{
-
 			std::cout << wholenum;
-}
+		}
 
 		else
-{
-
-			std::cout << wholenum << "	" << remainder << " / " << denominator;
+		{
+			std::cout << wholenum << "	" << remainder << " / " << denominator << "\n\n";
 		}
 
 	}
 
 	else
 	{
-
-		std::cout << remainder << " / " << denominator;
-	}*/
+		std::cout << remainder << " / " << denominator << "\n\n";
+	}
 }
