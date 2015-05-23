@@ -6,10 +6,7 @@
 
 Fraction::Fraction()
 {
-	/*Numeratorf1 = 0;
-	Numeratorf2 = 0;
-	Denominatorf1 = 1;
-	Denominatorf2 = 1;*/
+
 	numerator = 0;
 	denominator = 1;
 }
@@ -17,10 +14,7 @@ Fraction::Fraction()
 
 Fraction::Fraction(int num, int denom)
 {
-	/*Numeratorf1 = numf1;
-	Numeratorf2 = numf2;
-	Denominatorf1 = denomf1;
-	Denominatorf2 = denomf2;*/
+	
 	numerator = num;
 	denominator = denom;
 }
@@ -31,39 +25,18 @@ Fraction::~Fraction()
 
 int Fraction::getDenominator()
 {
-
 	return denominator;
 }
 
-/*int Fraction::getDf2()
-{
-
-	return Denominatorf2;
-}*/
-
 int Fraction::getNumerator()
 {
-
 	return numerator;
 }
 
-/*int Fraction::getNf2()
-{
-
-	return Numeratorf2;
-}*/
-
 void Fraction::setNumerator(const int numer)
 {
-
 	numerator = numer;
 }
-
-/*void Fraction::setNf2(const int numerf2)
-{
-
-	Numeratorf2 = numerf2;
-}*/
 
 bool Fraction::setDenominator(const int denom)
 {
@@ -78,21 +51,6 @@ bool Fraction::setDenominator(const int denom)
 
 	return set;
 }
-
-/*bool Fraction::setDf2(const int denomf2)
-{
-
-	bool set = false;
-
-	if (denomf2 != 0)		//Prevents setting the Denominator to Zer0
-	{
-
-		set = true;
-		Denominatorf2 = denomf2;
-	}
-
-	return set;
-}*/
 
 Fraction Fraction::multiplication(Fraction &frac1, Fraction &frac2)
 {

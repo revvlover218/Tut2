@@ -8,15 +8,12 @@ int main()
 {
 
 	int num;
-	//int numf2;
 	int denom;
-	//int denomf2;
 
 	Fraction product;
 	Fraction qoutient;
 	Fraction sum;
 	Fraction diff;
-	Fraction frac;
 	Fraction frac1;
 	Fraction frac2;
 
@@ -40,11 +37,6 @@ int main()
 
 	frac2.setNumerator(num);
 	frac2.setDenominator(denom);
-
-	/*frac.setNf1(numf1);
-	frac.setDf1(denomf1);
-	frac.setNf2(numf2);
-	frac.setDf2(denomf2);*/
 
 	//Display functions
 

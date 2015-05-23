@@ -5,41 +5,34 @@ class Fraction {
 
 private:
 
-	/*int Numeratorf1;
-	int Numeratorf2;
-	int Denominatorf1;
-	int Denominatorf2;*/
 	int numerator;
 	int denominator;
 
 public:
 	
-	Fraction();		//Default Constructor
-	Fraction(int, int);		//Overloaded Constructor
-	~Fraction();		//Destructor
+	Fraction();										//Default Constructor
+	Fraction(int, int);								//Overloaded Constructor
+	~Fraction();									//Destructor
 
-	int getNumerator();		//Accessors
-	//int getNf2();
+	int getNumerator();								//Accessors
 	int getDenominator();
-//	int getDf2();
 
-	void setNumerator(const int);		//Mutators
-	//void setNf2(const int numerf2);
+	void setNumerator(const int);					//Mutators
 	bool setDenominator(const int);
-	//bool setDf2(const int denomf2);
 
+	//Operations:
 
-	Fraction multiplication(Fraction &frac1, Fraction &frac2);		//Operation
-	Fraction operator*(const Fraction&); //Overloaded operation
+	Fraction multiplication(Fraction &frac1, Fraction &frac2);		
+	Fraction operator*(const Fraction&);						//Overloaded operation*
 
 	Fraction division(Fraction &frac1, Fraction &frac2);
-	Fraction operator/(const Fraction&);
+	Fraction operator/(const Fraction&);						//Overloaded operation/
 
 	Fraction addition(Fraction &frac1, Fraction &frac2);
-	Fraction operator+(const Fraction&);
+	Fraction operator+(const Fraction&);						//Overloaded operation+
 
 	Fraction subtraction(Fraction &frac1, Fraction &frac2);
-	Fraction operator-(const Fraction&);
+	Fraction operator-(const Fraction&);						//Overloaded operation-
 
 	void print();
 };
